@@ -5,46 +5,48 @@ import { Home, SwapVert, PieChart, LocalAtm, Receipt, ArrowBack } from '@mui/ico
 const Finance = () => {
   return (
     <Box className="flex min-h-screen bg-[#f8f5f0] justify-center items-center p-4">
-      <Box className="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-6xl w-full bg-white p-5 shadow-lg rounded-xl">
+      <Box className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl w-full bg-white p-5 shadow-lg rounded-xl">
         
         {/* Sidebar */}
-        <Box className="hidden lg:block p-6 bg-black h-[550px] text-white rounded-lg">
-          <Typography variant="h4" fontWeight="bold" mb={8}>
-            Finance
-          </Typography>
-          {/* Sidebar items */}
-          <Box className="flex flex-col flex-grow space-y-4">
-            <Box className="flex items-center  bg-white rounded-xl text-black border-l-4 mb-1 border-[#277c77] p-2">
-              <Home sx={{ mr: 1 }} className="text-[#277c77] " />
-              <Typography variant="h6">Overview</Typography>
-            </Box>
-            <Box className="flex items-center">
-              <SwapVert sx={{ mr: 1 }} />
-              <Typography variant="h6">Transactions</Typography>
-            </Box>
-            <Box className="flex items-center">
-              <PieChart sx={{ mr: 1 }} />
-              <Typography variant="h6">Budgets</Typography>
-            </Box>
-            <Box className="flex items-center">
-              <LocalAtm sx={{ mr: 1 }} />
-              <Typography variant="h6">Pots</Typography>
-            </Box>
-            <Box className="flex items-center">
-              <Receipt sx={{ mr: 1 }} />
-              <Typography variant="h6">Recurring Bills</Typography>
-            </Box>
-          </Box>
+        <Box className="hidden fixed lg:block p-6 bg-black h-[600px] text-white rounded-lg">
+  <Typography variant="h4" fontWeight="bold" mb={8}>
+    Finance
+  </Typography>
+  
+  {/* Sidebar items */}
+  <Box className="flex flex-col flex-grow space-y-4 justify-center">
+    <Box className="flex items-center bg-white rounded-xl text-black border-l-4 mb-1 border-[#277c77] p-2">
+      <Home sx={{ mr: 1 }} className="text-[#277c77]" />
+      <Typography variant="h6">Overview</Typography>
+    </Box>
+    <Box className="flex items-center">
+      <SwapVert sx={{ mr: 1 }} />
+      <Typography variant="h6">Transactions</Typography>
+    </Box>
+    <Box className="flex items-center">
+      <PieChart sx={{ mr: 1 }} />
+      <Typography variant="h6">Budgets</Typography>
+    </Box>
+    <Box className="flex items-center">
+      <LocalAtm sx={{ mr: 1 }} />
+      <Typography variant="h6">Pots</Typography>
+    </Box>
+    <Box className="flex items-center">
+      <Receipt sx={{ mr: 1 }} />
+      <Typography variant="h6">Recurring Bills</Typography>
+    </Box>
+  </Box>
 
-          {/* Minimize Menu at the bottom */}
-          <Box className="flex mt-4">
-            <ArrowBack sx={{ mr: 1 }} />
-            <Typography variant="h6">Minimize Menu</Typography>
-          </Box>
-        </Box>
+  {/* Minimize Menu at the bottom */}
+  <Box className="absolute bottom-4 left-6 flex items-center pb-3">
+    <ArrowBack sx={{ mr: 1 }} />
+    <Typography variant="h6">Minimize Menu</Typography>
+  </Box>
+</Box>
+
        
         {/* Main Content */}
-        <Box className="col-span-3 grid p-6 space-y-6">
+        <Box className="col-span-3 grid p-6 space-y-6 ml-[250px]">
           <Typography variant="h4" fontWeight="bold" mb={4}>
             Overview
           </Typography>
