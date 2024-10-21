@@ -14,8 +14,8 @@ const Finance = () => {
           </Typography>
           {/* Sidebar items */}
           <Box className="flex flex-col flex-grow space-y-4">
-            <Box className="flex items-center">
-              <Home sx={{ mr: 1 }} />
+            <Box className="flex items-center  bg-white rounded-xl text-black border-l-4 mb-1 border-[#277c77] p-2">
+              <Home sx={{ mr: 1 }} className="text-[#277c77] " />
               <Typography variant="h6">Overview</Typography>
             </Box>
             <Box className="flex items-center">
@@ -75,7 +75,7 @@ const Finance = () => {
                 </Box>
                 <Box className="grid grid-cols-2 gap-2 pt-5">
                   <Box className="flex gap-2 bg-[#f8f5f1] p-5 rounded-xl">
-                    <LocalAtm />
+                    <LocalAtm className='m-auto text-[#6f8783]'/>
                     <Box>
                       <p className='text-gray-500 text-sm'>Total Saved</p>
                       <div className='font-bold text-[10px] lg:[30px]'>$850</div>
