@@ -8,7 +8,7 @@ const Finance = () => {
       <Box className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl w-full bg-white p-5 shadow-lg rounded-xl">
         
         {/* Sidebar */}
-        <Box className="hidden fixed lg:block p-6 bg-black h-[600px] text-white rounded-lg">
+        <Box className="hidden fixed lg:block p-6 bg-black md:h-[550px]   text-white rounded-lg">
   <Typography variant="h4" fontWeight="bold" mb={8}>
     Finance
   </Typography>
@@ -46,7 +46,7 @@ const Finance = () => {
 
        
         {/* Main Content */}
-        <Box className="col-span-3 grid p-6 space-y-6 ml-[250px]">
+        <Box className="col-span-3 grid p-6 space-y-6 ml-0 lg:ml-[250px]">
           <Typography variant="h4" fontWeight="bold" mb={4}>
             Overview
           </Typography>
