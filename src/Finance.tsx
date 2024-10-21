@@ -8,7 +8,7 @@ const Finance = () => {
       <Box className="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-6xl w-full bg-white p-5 shadow-lg rounded-xl">
         
         {/* Sidebar */}
-        <Box className="hidden lg:block p-6 bg-black text-white rounded-lg">
+        <Box className="hidden lg:block p-6 bg-black h-[550px] text-white rounded-lg">
           <Typography variant="h4" fontWeight="bold" mb={8}>
             Finance
           </Typography>
