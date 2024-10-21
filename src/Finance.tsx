@@ -78,7 +78,7 @@ const Finance = () => {
                     <LocalAtm />
                     <Box>
                       <p className='text-gray-500 text-sm'>Total Saved</p>
-                      <div className='font-bold text-[30px]'>$850</div>
+                      <div className='font-bold text-[20px] lg:[30px]'>$850</div>
                     </Box>
                   </Box>
                   <Box className="grid grid-cols-2 row-span-2 m-auto gap-2">
